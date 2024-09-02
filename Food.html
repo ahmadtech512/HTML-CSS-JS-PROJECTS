@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Food.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"  rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <style>
+       body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: white;
+
+ } 
+ nav{
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
+   color: white;
+   padding: 10px;
+   box-shadow: 0px 4px 7px 4px rgb(24, 24, 24);
+   position: fixed;
+   width: 100%;
+   top: 0%;
+
+ } 
+ nav ul a{
+
+   text-decoration: none;
+   color: white;
+   margin-inline: 30px;
+ }
+  nav button{
+   width: 80px;
+   height: 28px;
+   background-color: rgb(240, 4, 4);
+   color: white;
+   font-size: 18px;
+   border-radius: 2px;
+   border: none;
+  }
+  nav button:hover{
+   border: 2px solid red;
+   background-color: transparent;
+  }
+  nav ul{
+   margin-right: 33px;
+
+  }
+  .logo{
+
+   margin-left: 22px;
+  }
+  .logo h1{
+   position: absolute;
+   top: -10px;
+   /* padding-left: 65px; */
+   font-size: 33px;
+   font-family: 'Courgette', cursive;
+   color: red;
+   border-radius: 4px;
+   border-bottom: 4px solid red;
+   border-bottom-right-radius: 22px;
+
+  }
+  .main{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 175px;
+  }
+  .main .mainText h1{
+font-size: 47px;
+  }
+
+  .mainText h2{
+   font-size: 33px;
+   color: rgb(60, 121, 252);
+     }
+     .mainText p{
+      color: silver;
+        }
+   .mainText button{
+      width: 140px;
+      height: 40px;
+      background-color: red;
+      color: white;
+      border-radius: 2px;
+      border: none;
+      font-size: 22px;
+   }   
+   .mainText button:hover{
+      border: 3px solid red;
+      background-color: transparent;
+      cursor: pointer;
+   }
+.main img{
+   width: 38%;
+}
+
+.head{
+   text-align: center;
+   margin-top: 25px;
+   padding: 75px;
+}
+.head span{
+   color: rgb(53, 151, 249);
+}
+.card{
+   display: flex;
+   justify-content: center;
+   margin-top: 44px;
+
+}
+.card .crd{
+   width: 300px;
+   margin-inline: 22px;
+   background-color: #fff;
+   color: black;
+}
+.foodText button{
+   width: 100px;
+   height: 30px;
+   background-color: rgb(194, 66, 66);
+   color: white;
+   border-radius: 5px;
+   border: none;
+   font-size: 18px;
+   cursor: pointer;
+}
+.crd .foodText{
+   padding: 22px;
+}
+.crd:hover{
+   background-color: rgb(146, 60, 60);
+   color: white;
+   transition: 3s ease-in-out;
+}
+
+.crd img{
+   width: 100%;
+}
+.crd img:hover{
+   transform: scale(1.1);
+   width: 100%;
+}
+.crd img{
+   width: 100%;
+}
+.best{
+   display: flex;
+   width: 800px;
+   background-color: #fff;
+   color: black;
+   margin-top: 33px;
+   margin-left: 20%;
+}
+.best img{
+   width: 48%;
+}
+.best .bestText{
+   padding: 22px;
+}
+.bestText{
+   text-align: center;
+}
+.bestText a{
+   width: 130px;
+   padding: 8px;
+   background-color: red;
+   color: white;
+   text-decoration: none;
+   border-radius: 2px;
+   border: none;
+   font-size: 18px;
+}
+.bestText a:hover{
+   width: 130px;
+   padding: 8px;
+   background-color: rgb(148, 27, 27);
+   color: rgb(211, 188, 188);
+   text-decoration: none;
+   border-radius: 2px;
+   border: none;
+   font-size: 18px;
+}
+.bestText img{
+   border-radius: 60%;
+}
+.bestText img:hover{
+   transform: scale(1.4);
+}
+
+.order{
+   display: flex;
+   justify-content: center;
+
+}
+.orderText i{
+   font-size: 187px;
+   color: red;
+
+}
+.orderText i:hover{
+   color: rgb(53, 158, 249);
+}
+.orderText button{
+   width: 130px;
+   height: 36px;
+   background-color: red;
+   color: white;
+   border-radius: 2px;
+   border: none;
+   font-size: 18px;
+}
+.orderText{
+   margin-inline: 100px;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-around;
+   background-color: rgb(232, 230, 230);
+   color: black;
+   padding: 55px;
+   margin-top: 84px;
+}
+
+/* login */
+.loginPage{
+   display: none;
+   width: 190px;
+   padding: 22px;
+   background-color: #fff;
+   position: absolute;
+   margin-left: 81%;
+   top: 16%;
+   text-align: center;
+
+}
+.loginPage input{
+   width: 170px;
+   padding: 4px;
+   border: 2px solid rgb(52, 141, 249);
+   outline: none;
+   margin-top: 11px;
+
+}
+.loginPage button{
+   width: 100px;
+   height: 30px;
+   background-color: rgb(54, 136, 250);
+   color: white;
+   font-size:20px;
+   border: none;
+   cursor: pointer;
+   margin-top: 13px;
+}
+
+/* tracking */
+
+.tracking{
+
+   display: flex;
+   justify-content: space-around;
+   margin-top: 175px;
+   display: none;
+}
+.tracking img{
+   width: 50%;
+}
+/* General adjustments for mobile */
+@media (max-width: 768px) {
+   body {
+       font-size: 14px; /* Adjust font size for smaller screens */
+   }
+
+   .main {
+       flex-direction: column; /* Stack items vertically */
+       margin-top: 120px; /* Reduce top margin */
+   }
+
+   .main .mainText h1 {
+       font-size: 32px; /* Decrease heading size */
+       text-align: center; /* Center align text */
+   }
+
+   .main img {
+       width: 100%; /* Full width for image */
+       margin-top: 20px; /* Add space below image */
+   }
+   nav{
+      /* display: flex; */
+      
+      background-color: black;
+      color: white;
+      padding: 3px;
+      box-shadow: 0px 4px 7px 4px rgb(24, 24, 24);
+      /* position: sticky; */
+      width: 100%;
+      top: 0%;
+   
+    } 
+   nav button{
+      width: 40px;
+      height: 22px;
+      background-color: rgb(240, 4, 4);
+      color: white;
+      font-size: 8px;
+      border-radius: 2px;
+      border: none;
+     }
+   .card {
+       flex-direction: column; /* Stack cards vertically */
+       margin-top: 20px; /* Adjust top margin */
+   }
+
+   .crd {
+       width: 100%; /* Full width for cards */
+       margin-bottom: 20px; /* Space between cards */
+   }
+
+   .best {
+       flex-direction: column; /* Stack best dishes vertically */
+       width: 100%; /* Full width */
+       margin-left: 0; /* Remove left margin */
+   }
+
+   .best img {
+       width: 100%; /* Full width for best dish images */
+       margin-bottom: 20px; /* Space between images */
+   }
+
+   .order {
+       flex-direction: column; /* Stack order section vertically */
+       align-items: center; /* Center align items */
+   }
+
+   .orderText {
+       margin-inline: 0; /* Remove horizontal margin */
+       text-align: center; /* Center align text */
+   }
+
+   .orderText i {
+       font-size: 120px; /* Decrease icon size */
+   }
+
+   .tracking {
+       flex-direction: column; /* Stack tracking section vertically */
+       align-items: center; /* Center align items */
+       margin-top: 20px; /* Adjust top margin */
+   }
+
+   .tracking img {
+       width: 100%; /* Full width for tracking image */
+   }
+
+   .footer {
+       flex-direction: column; /* Stack footer items vertically */
+       text-align: center; /* Center align text */
+       padding: 30px; /* Reduce padding */
+   }
+}
+
+/* Adjustments for smaller screens (e.g., phones) */
+@media (max-width: 480px) {
+   .logo h1 {
+       font-size: 8px; /* Decrease logo font size */
+   }
+.logo ul a{
+   font-size: 8px;
+}
+   .nav ul {
+       margin-right: 10px; /* Reduce right margin */
+   }
+   .nav ul a{
+
+      font-size: 8px;
+    }
+   .mainText h1 {
+       font-size: 18px; /* Decrease main heading font size */
+   }
+
+   .mainText h2 {
+       font-size: 18px; /* Decrease secondary heading font size */
+   }
+
+   .mainText p {
+       font-size: 12px; /* Decrease paragraph font size */
+   }
+
+   .mainText button {
+       width: 120px; /* Adjust button width */
+       height: 36px; /* Adjust button height */
+       font-size: 16px; /* Decrease button font size */
+   }
+
+   .crd {
+       width: 100%; /* Full width for cards */
+       margin-bottom: 10px; /* Reduce space between cards */
+   }
+
+   .bestText {
+       padding: 10px; /* Reduce padding */
+   }
+
+   .bestText a {
+       padding: 6px; /* Reduce padding for link */
+       font-size: 14px; /* Decrease link font size */
+   }
+
+   .orderText i {
+       font-size: 100px; /* Decrease icon size */
+   }
+
+   .orderText button {
+       width: 120px; /* Adjust button width */
+       height: 32px; /* Adjust button height */
+       font-size: 16px; /* Decrease button font size */
+   }
+
+   .tracking {
+       margin-top: 10px; /* Reduce top margin */
+   }
+
+   .footer {
+       padding: 20px; /* Reduce padding */
+   }
+}
+
+/* login */
+.loginPage{
+   display: none;
+   width: 190px;
+   padding: 22px;
+   background-color: #fff;
+   position: absolute;
+   margin-left: 81%;
+   top: 16%;
+   text-align: center;
+
+}
+.loginPage input{
+   width: 170px;
+   padding: 4px;
+   border: 2px solid rgb(52, 141, 249);
+   outline: none;
+   margin-top: 11px;
+
+}
+.loginPage button{
+   width: 100px;
+   height: 30px;
+   background-color: rgb(54, 136, 250);
+   color: white;
+   font-size:20px;
+   border: none;
+   cursor: pointer;
+   margin-top: 13px;
+}
+
+/* tracking */
+
+.tracking{
+
+   display: flex;
+   justify-content: space-around;
+   margin-top: 175px;
+   display: none;
+}
+.tracking img{
+   width: 50%;
+}
+/* 
+ 
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;  }
+
+    .main {
+        flex-direction: column; 
+        margin-top: 120px; 
+    }
+
+    .main .mainText h1 {
+        font-size: 32px; 
+        text-align: center;
+    }
+
+    .main img {
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    .card {
+        flex-direction: column; 
+        margin-top: 20px; 
+    }
+
+    .crd {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .best {
+        flex-direction: column;
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+    .best img {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .order {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .orderText {
+        margin-inline: 0; 
+        text-align: center; 
+    }
+
+    .orderText i {
+        font-size: 120px;
+    }
+
+    .tracking {
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 20px; 
+    }
+
+    .tracking img {
+        width: 100%; 
+    }
+
+    .footer {
+        flex-direction: column; 
+        text-align: center; 
+        padding: 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 12px; 
+    }
+
+    .nav ul {
+        margin-right: 8px; 
+    }
+ 
+        nav ul a{
+
+text-decoration: none;
+color: white;
+margin-inline: 10px;
+}
+
+
+    .mainText h1 {
+        font-size: 20px; 
+    }
+
+    .mainText h2 {
+        font-size: 20px; }
+
+    .mainText p {
+        font-size: 12px; }
+    .mainText button {
+        width: 120px;
+        height: 36px; 
+        font-size: 16px; 
+    }
+
+    .crd {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .bestText {
+        padding: 10px;
+    }
+
+    .bestText a {
+        padding: 6px; 
+        font-size: 14px; 
+
+    .orderText i {
+        font-size: 100px; 
+    }
+
+    .orderText button {
+        width: 120px; 
+        height: 32px; 
+        font-size: 16px; 
+    }
+
+    .tracking {
+        margin-top: 10px; 
+    }
+
+    .footer {
+        padding: 20px;
+    }
+} */
+
+    </style>
+ </head>
+ <body>
+     <div class="container">
+        <nav>
+            <div class="logo">
+                <!-- <img height="70px" width="70px" src="peakunt-removebg-preview.png" alt=""> -->
+                <h1>Piquant Bites</h1>
+            </div>
+            <ul>
+                <a  href="">Home</a>
+                <a id="foods" href="#food">Foods</a>
+                <a id="dishs" href="#dish">Best Dishes</a>
+                <a id="orders" href="#order">Track Order</a>
+                <button id="logBtn">Log In</button>
+
+            </ul>
+        </nav>
+
+        <!-- login -->
+        <div class="loginPage">
+            <input type="text" placeholder="Enter Email" id="name">
+            <input type="password" placeholder="Enter password" id="pass">
+            <button id="logedBtn">Log In</button>
+
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="mainText">
+                <h1>Healthy Food For Wealthy <br> Mood</h1>
+                <h2>Upto 10% OFF</h2>
+                <h1>Free Home    Delivery</h1>
+                <p>Enjoy authentic fast food by top chefs in Gujranwala. Energy-filled meals for every moment.</p>
+                <a href="index.html">Order Now</a>
+            </div>
+            <img height="400px" width="200px"  border-radius: 50%; src="land.jpeg" alt="">
+        </div>
+
+        <!-- cards -->
+
+        <div class="foodcard" id="food">
+          <div class="head">
+            <h1>Our <span>Food</span></h1>
+          </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s" alt="">
+                    <div class="foodText">
+                        <h2>Pizza's</h2>
+                        <p>Enjoy our delicious pizza's, crafted with fresh ingredients and special sauces.</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="https://www.thecookierookie.com/wp-content/uploads/2018/12/baked-chicken-wings-reshoot-500x375.jpg" alt="">
+                    <div class="foodText">
+                        <h2>Apitizer's</h2>
+                        <p>Pair your meal with our crispy fries and a selection of delicious sides for a complete experience.</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="p1 (4).jpg" alt="">
+                    <div class="foodText">
+                        <h2>Burger's</h2>
+                        <p>Savor our grilled burgers, featuring high-quality meat and a variety of flavorful toppings.</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="card2">
+            <div class="crd">
+                <img src="p1 (5).jpg" alt="">
+                <div class="foodText">
+                    <h2>Sandwiches & Fries</h2>
+                    <p>Enjoy our delicious chicken sandwiches, crafted with fresh ingredients and special sauces.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="p1 (6).jpg" alt="">
+                <div class="foodText">
+                    <h2>Pasta's</h2>
+                    <p>Try our healthy and fresh cheezy pastas, made with a mix of crisp vegetables and tasty dressings.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrs9W9XYu_NlXeLzvMa5X1hRBGsCrSNVT7w&s" alt="">
+                <div class="foodText">
+                    <h2>Chinie's</h2>
+                    <p>Savor our chines dishes, featuring high-quality things and a variety of flavorful toppings.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="card2">
+            <div class="crd">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVOEcASyWTiAU4HBMxHYb7T3mRFb1ui75Ug&s" alt="">
+                <div class="foodText">
+                    <h2>Steaks</h2>
+                    <p></p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="https://embed.widencdn.net/img/beef/g4wywa1li0/exact/Saucy%20Beef%20Wraps%20-%2004.tif?keep=c&u=7fueml" alt="">
+                <div class="foodText">
+                    <h2>Wrap's</h2>
+                    <p></p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYg-bd41gp07DGUmjqX24KYf9f6GMce3OEw&s" alt="">
+                <div class="foodText">
+                    <h2>Desert's</h2>
+                    <p></p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dish" id="dish">
+        <div class="head">
+            <h1>Our Best <span>Dishe's</span></h1>
+        </div>
+        <div class="best">
+            <img src="https://themeatboxcompany.co.uk/wp-content/uploads/2023/07/BBQChickenburger-e1690468425632-1024x1008.png" alt="">
+            <div class="bestText">
+                <h2>Grilled Chicken Bueger</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCFtCkqWNU56LaP72WQe5HhdkVRSCVUQ4DtA&s" alt="">
+             <h1>Rs 720</h1>
+                <a href="">Order Now</a>
+            </div>
+        </div>
+        <div class="best">
+            <img src="https://i.dawn.com/large/2015/03/54fcd79167d5f.jpg" alt="">
+            <div class="bestText">
+                <h2>Piquant Special Steak</h2>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0b/57/d5/75/the-italian-steak.jpg" alt="">
+                <h1>Rs 1250</h1>
+                <a href="">Order Now</a>
+            </div>
+        </div>
+        <div class="best">
+            <img height="400px " width="400px" src="https://kababjeespizza.com/_next/image?url=https%3A%2F%2Fassets.indolj.io%2Fimages%2F1686826235-Saucy.jpg&w=3840&q=75" alt="">
+            <div class="bestText">
+                <h2>Royal Crust Pizza</h2>
+                <img src="https://images.deliveryhero.io/image/fd-pk/Products/41003845.jpg?width=%s" alt="">
+                <H1>Rs 1950</H1>
+                <a href="">Order Now</a>
+            </div>
+        </div>
+        <div class="best">
+            <img src="https://assets.sainsburys-groceries.co.uk/gol/Air-fryer-chicken-wings-with-garlic-mayo/original.jpg" alt="">
+            <div class="bestText">
+                <h2>Garlic Mayo Wings</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0uX_6_q4tM62fPcCtWIDOo3iohbuJvXCXuw&s" alt="">
+                <p>6 Pieces</p>
+
+                <h2>Rs 690</h2>
+               
+                
+                <a href="">Order Now</a>
+            </div>
+        </div>
+       
+    </div>
+    <div class="dish" id="dish">
+        
+        <div class="best" >
+            <img src="https://www.cookedandloved.com/wp-content/uploads/2023/04/healthy-wraps-lentils-hummus-edamame.jpg" alt="">
+            <div class="bestText">
+                <h2>Maxican Wraps</h2>
+                <img src="https://www.eatingwell.com/thmb/_KRmqSHZzUEWKQVE0uP3QLB98d4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4526733-45129f82ed554ea1be3ac980d096a6f1.jpg" alt="">
+                <h2>Rs  490</h2>
+                <a href="">Order Now</a>
+            </div>
+        </div>
+        <div class="best">
+            <img src="https://i.dawn.com/large/2015/03/54fcd79167d5f.jpg" alt="">
+            <div class="bestText">
+                <h2>Piquant Special Steak</h2>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0b/57/d5/75/the-italian-steak.jpg" alt="">
+                <h1>Rs 1250</h1>
+                <a href="">Order Now</a>
+            </div>
+        </div>
+        <div class="best">
+            <img height="400px " width="400px" src="https://kababjeespizza.com/_next/image?url=https%3A%2F%2Fassets.indolj.io%2Fimages%2F1686826235-Saucy.jpg&w=3840&q=75" alt="">
+            <div class="bestText">
+                <h2>Royal Crust Pizza</h2>
+                <img src="https://images.deliveryhero.io/image/fd-pk/Products/41003845.jpg?width=%s" alt="">
+                <H1>Rs 1950</H1>
+                <a href="">Order Now</a>
+            </div>
+        </div>
+        <div class="best" >
+            <img src="https://www.foodandwine.com/thmb/XdFd-DvTtouryLCjeCqwhfmmK-A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/molten-chocolate-cake-FT-RECIPE0220-0a33d7d0ab0c45588f7bfe742d33a9bc.jpg" alt="">
+            <div class="bestText">
+                <h2>Molten Lava Cake</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRuNu5gdRssgEHvHLi4ELpyfrSpzJT857igw&s" alt="">
+               <h2>Rs 650</h2>
+                <a href="">Order Now</a>
+            </div>
+        </div>
+    
+       
+    </div>
+   
+   
+    
+    <!-- order track -->
+
+    <div class="track" id="order">
+        <div class="head">
+            <h1>Track <span>Order</span></h1>
+        </div>
+
+        <div class="order">
+            <div class="orderText">
+                <i class="fa-solid fa-person-biking"></i>
+                <h2>Track Order Here</h2>
+                <button id="trackBtn">Track Now</button>
+            </div>
+
+            <img height="400px" width="400px" src="https://arrowtrack.com.pk/wp-content/uploads/2024/02/Top-10-vehicle-tracking-companies-in-pakistan.webp" alt="">
+        </div>
+    </div>
+
+    <!-- tracking -->
+
+    <div class="tracking">
+        <div class="trackText">
+            <h1>Live Order Tracking</h1>
+            <h2>Fast Delivery</h2>
+            <p>We are tracking your order.Please be patient.Our rider is on the way. Thank You!</p>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZhO_DZJN9BFYiw4vD1mBOQ_IOllVsurH3SCvAHKi4oWOPU0glbbdw0eqTXmibahlg6Q&usqp=CAU" alt="">
+    </div>
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="text">
+            <h2>About Us</h2>
+            <p>Piquant Bites is a fast food restaurant located on GT Road,<br> near Old PACE in
+                Gujranwala. We offer a variety of quick and<br> delicious meals that cater to your 
+                taste buds and busy schedule.<br>Whether you're grabbing a quick lunch or enjoy-
+                ing dinner with<br> friends, Piquant Bites provides a satisfying experience. 
+                Visit us for<br> a taste that will keep you coming back!</p>
+        </div>
+        <div class="text">
+            <h2>Our Foods</h2>
+            <p>Quality</p> 
+            <p>price</p>
+            <p>service</p>
+            <p>Quality</p>
+
+        </div>
+        <div class="text">
+            <h2>Customer</h2>
+            <p>Service</p>
+            <p>Relation</p>
+            <p>quality</p>
+            <p>price</p>
+            <p>more</p>
+
+        </div>
+        <div class="text">
+            <h2>Contact Us</h2>
+            <p>GT Road Gujranwala</p>
+            <p>Near PACE</p>
+            <p>Service Road</p>
+            <p>055-3733331</p>
+            <p>0346-4192340</p>
+
+
+        </div>
+    </div>
+     </div>
+
+     
+    <script src="Food.js">let foods = document.getElementById("foods");
+        let orders = document.getElementById("orders");
+        let dishs = document.getElementById("dishs");
+        let trackBtn = document.getElementById("trackBtn");
+       
+       
+        foods.addEventListener("click", function(){
+           foods.style.color="red";
+           orders.style.color="white";
+           dishs.style.color="white";
+       
+        })
+       
+       
+        dishs.addEventListener("click", function(){
+           foods.style.color="white";
+           orders.style.color="white";
+           dishs.style.color="red";
+       
+        })
+       
+       
+        orders.addEventListener("click", function(){
+           foods.style.color="white";
+           orders.style.color="red";
+           dishs.style.color="white";
+       
+        })
+       
+        let logBtn = document.getElementById("logBtn");
+       
+        logBtn.addEventListener("click", function(){
+           document.querySelector(".loginPage").style.display="block";
+        })
+       
+        let loged = document.getElementById("logedBtn");
+       
+        loged.addEventListener("click", function(){
+       
+           let email = document.getElementById("name");
+           let pass = document.getElementById("pass");
+       
+           if(email.value == "" || pass.value == ""){
+               alert("Please Enter Email Password")
+           }else{
+               alert("You Loged In");
+               document.querySelector(".loginPage").style.display="none";
+       
+           }
+       
+        })
+       
+        trackBtn.addEventListener("click", function(){
+           document.querySelector(".tracking").style.display="flex";
+           document.getElementById("food").style.display="none";
+           document.getElementById("order").style.display="none";
+           document.getElementById("dish").style.display="none";
+           document.querySelector(".main").style.display="none";
+           document.getElementById("card2").style.display="none";
+       
+       
+       
+        })</script>
+        
+        
+ </body>
+ </html>

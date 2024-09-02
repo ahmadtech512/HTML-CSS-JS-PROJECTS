@@ -1,0 +1,618 @@
+body{
+   font-family: 'Roboto', sans-serif;
+   margin: 0%;
+   padding: 0%;
+   background-color: black;
+   color: white;
+
+} 
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  box-shadow: 0px 4px 7px 4px rgb(24, 24, 24);
+  position: fixed;
+  width: 100%;
+  top: 0%;
+
+} 
+nav ul a{
+
+  text-decoration: none;
+  color: white;
+  margin-inline: 30px;
+}
+ nav button{
+  width: 80px;
+  height: 28px;
+  background-color: rgb(240, 4, 4);
+  color: white;
+  font-size: 18px;
+  border-radius: 2px;
+  border: none;
+ }
+ nav button:hover{
+  border: 2px solid red;
+  background-color: transparent;
+ }
+ nav ul{
+  margin-right: 33px;
+
+ }
+ .logo{
+
+  margin-left: 22px;
+ }
+ .logo h1{
+  position: absolute;
+  top: -10px;
+  /* padding-left: 65px; */
+  font-size: 33px;
+  font-family: 'Courgette', cursive;
+  color: red;
+  border-radius: 4px;
+  border-bottom: 4px solid red;
+  border-bottom-right-radius: 22px;
+
+ }
+ .main{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 175px;
+ }
+ .main .mainText h1{
+font-size: 47px;
+ }
+
+ .mainText h2{
+  font-size: 33px;
+  color: rgb(60, 121, 252);
+    }
+    .mainText p{
+     color: silver;
+       }
+  .mainText a{
+     width: 140px;
+     height: 40px;
+     background-color: red;
+     color: white;
+     border-radius: 4px rgb(139, 46, 46);
+     border: none;
+     font-size: 22px;
+     text-decoration: none;
+  }   
+  .mainText a:hover{
+     border: 3px solid red;
+     background-color: transparent;
+     cursor: pointer;
+  }
+.main img{
+  width: 38%;
+}
+
+.head{
+  text-align: center;
+  margin-top: 25px;
+  padding: 75px;
+}
+.head span{
+  color: rgb(53, 151, 249);
+}
+#dish{
+  padding-right: 500px;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+
+}
+.card .crd{
+  width: 300px;
+  margin-inline: 22px;
+  background-color: #fff;
+  color: black;
+}
+.foodText button{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(194, 66, 66);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.crd .foodText{
+  padding: 22px;
+}
+.crd:hover{
+  background-color: rgb(243, 161, 38);
+  color: white;
+  transition: 2s ease-in-out;
+}
+
+.crd img{
+  width: 100%;
+}
+.crd img:hover{
+  transform: scale(1.1);
+  width: 100%;
+}
+.crd img{
+  width: 100%;
+}
+.best{
+  display: flex;
+  width: 800px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  margin-top: 33px;
+  margin-left: 20%;
+  
+}
+.best img{
+  width: 48%;
+}
+.best .bestText{
+  padding: 22px;
+}
+.bestText{
+  text-align: center;
+}
+.bestText:hover{
+  background-color: rgb(218, 142, 28);
+}
+.bestText a{
+  width: 130px;
+  padding: 8px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  border: none;
+  font-size: 18px;
+}
+.bestText a:hover{
+  width: 130px;
+  padding: 8px;
+  background-color: rgb(223, 119, 22);
+  color: rgb(211, 188, 188);
+  text-decoration: none;
+  border-radius: 2px;
+  border: none;
+  font-size: 18px;
+}
+.bestText img{
+  border-radius: 60%;
+}
+.bestText img:hover{
+  transform: scale(1.4);
+}
+
+.order{
+  display: flex;
+  justify-content: center;
+
+}
+.orderText i{
+  font-size: 187px;
+  color: red;
+
+}
+.orderText i:hover{
+  color: rgb(53, 158, 249);
+}
+.orderText button{
+  width: 130px;
+  height: 36px;
+  background-color: red;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  font-size: 18px;
+}
+.orderText{
+  margin-inline: 100px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(232, 230, 230);
+  color: black;
+  padding: 55px;
+  margin-top: 84px;
+}
+
+/* login */
+.loginPage{
+  display: none;
+  width: 190px;
+  padding: 22px;
+  background-color: #fff;
+  position: absolute;
+  margin-left: 81%;
+  top: 16%;
+  text-align: center;
+
+}
+.loginPage input{
+  width: 170px;
+  padding: 4px;
+  border: 2px solid rgb(52, 141, 249);
+  outline: none;
+  margin-top: 11px;
+
+}
+.loginPage button{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(54, 136, 250);
+  color: white;
+  font-size:20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+/* tracking */
+
+.tracking{
+
+  display: flex;
+  justify-content: space-around;
+  margin-top: 175px;
+  display: none;
+}
+.tracking img{
+  width: 50%;
+}
+/* General adjustments for mobile */
+@media (max-width: 768px) {
+  body {
+      font-size: 10px; /* Adjust font size for smaller screens */
+  }
+
+  .main {
+      flex-direction: column; /* Stack items vertically */
+      margin-top: 100px; /* Reduce top margin */
+      
+  }
+  .main .mainText h1 {
+      font-size: 28px; /* Decrease heading size */
+      text-align: center; /* Center align text */
+      
+  }
+
+  .main img {
+      width: 100%; /* Full width for image */
+      margin-top: 20px; /* Add space below image */
+  }
+  nav{
+     /* display: flex; */
+     
+     background-color: black;
+     color: white;
+     padding: 3px;
+     box-shadow: 0px 4px 7px 4px rgb(24, 24, 24);
+     /* position: sticky; */
+     width: 100%;
+     top: 0%;
+  
+   } 
+  nav button{
+     width: 35px;
+     height: 20px;
+     background-color: rgb(240, 4, 4);
+     color: white;
+     font-size: 8px;
+     border-radius: 2px;
+     border: none;
+     float: right;
+    }
+  .card {
+      flex-direction: column; /* Stack cards vertically */
+      margin-top: 20px; /* Adjust top margin */
+  }
+
+  .crd {
+      width: 100%; /* Full width for cards */
+      margin-bottom: 20px; /* Space between cards */
+  }
+
+  .best {
+      flex-direction: column; /* Stack best dishes vertically */
+      width: 100%; /* Full width */
+      margin-left: 0; /* Remove left margin */
+  }
+
+  .best img {
+      width: 100%; /* Full width for best dish images */
+      margin-bottom: 20px; /* Space between images */
+  }
+
+  .order {
+      flex-direction: column; /* Stack order section vertically */
+      align-items: center; /* Center align items */
+  }
+
+  .orderText {
+      margin-inline: 0; /* Remove horizontal margin */
+      text-align: center; /* Center align text */
+  }
+
+  .orderText i {
+      font-size: 120px; /* Decrease icon size */
+  }
+
+  .tracking {
+      flex-direction: column; /* Stack tracking section vertically */
+      align-items: center; /* Center align items */
+      margin-top: 20px; /* Adjust top margin */
+  }
+
+  .tracking img {
+      width: 100%; /* Full width for tracking image */
+  }
+
+  .footer {
+      flex-direction: column; /* Stack footer items vertically */
+      text-align: center; /* Center align text */
+      padding: 30px; /* Reduce padding */
+  }
+}
+
+/* Adjustments for smaller screens (e.g., phones) */
+@media (max-width: 480px) {
+  .logo h1 {
+      font-size: 12px; /* Decrease logo font size */
+  }
+.logo ul a{
+  font-size: 6px;
+}
+  .nav ul {
+      margin-right: 10px; /* Reduce right margin */
+  }
+  .nav ul a{
+    
+     font-size: 6px;
+   }
+  .mainText h1 {
+      font-size: 18px; /* Decrease main heading font size */
+  }
+
+  .mainText h2 {
+      font-size: 18px; /* Decrease secondary heading font size */
+  }
+
+  .mainText p {
+      font-size: 12px; /* Decrease paragraph font size */
+  }
+
+  .mainText button {
+      width: 120px; /* Adjust button width */
+      height: 36px; /* Adjust button height */
+      font-size: 16px; /* Decrease button font size */
+  }
+
+  .crd {
+      width: 100%; /* Full width for cards */
+      margin-bottom: 10px; /* Reduce space between cards */
+  }
+
+  .bestText {
+      padding: 10px; /* Reduce padding */
+  }
+
+  .bestText a {
+      padding: 6px; /* Reduce padding for link */
+      font-size: 14px; /* Decrease link font size */
+  }
+
+  .orderText i {
+      font-size: 100px; /* Decrease icon size */
+  }
+
+  .orderText button {
+      width: 120px; /* Adjust button width */
+      height: 32px; /* Adjust button height */
+      font-size: 16px; /* Decrease button font size */
+  }
+
+  .tracking {
+      margin-top: 10px; /* Reduce top margin */
+  }
+
+  .footer {
+      padding: 20px; /* Reduce padding */
+  }
+}
+
+/* login */
+.loginPage{
+  display: none;
+  width: 190px;
+  padding: 22px;
+  background-color: #fff;
+  position: absolute;
+  margin-left: 81%;
+  top: 16%;
+  text-align: center;
+
+}
+.loginPage input{
+  width: 170px;
+  padding: 4px;
+  border: 2px solid rgb(52, 141, 249);
+  outline: none;
+  margin-top: 11px;
+
+}
+.loginPage button{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(54, 136, 250);
+  color: white;
+  font-size:20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+/* tracking */
+
+.tracking{
+
+  display: flex;
+  justify-content: space-around;
+  margin-top: 175px;
+  display: none;
+}
+.tracking img{
+  width: 50%;
+}
+
+/* General adjustments for mobile */
+@media (max-width: 768px) {
+   body {
+       font-size: 14px; /* Adjust font size for smaller screens */
+   }
+
+   .main {
+       flex-direction: column; /* Stack items vertically */
+       margin-top: 120px; /* Reduce top margin */
+   }
+
+   .main .mainText h1 {
+       font-size: 32px; /* Decrease heading size */
+       text-align: center; /* Center align text */
+   }
+
+   .main img {
+       width: 100%; /* Full width for image */
+       margin-top: 20px; /* Add space below image */
+   }
+
+   .card {
+       flex-direction: column; /* Stack cards vertically */
+       margin-top: 20px; /* Adjust top margin */
+   }
+
+   .crd {
+       width: 100%; /* Full width for cards */
+       margin-bottom: 20px; /* Space between cards */
+   }
+
+   .best {
+       flex-direction: column; /* Stack best dishes vertically */
+       width: 100%; /* Full width */
+       margin-left: 0; /* Remove left margin */
+   }
+
+   .best img {
+       width: 100%; /* Full width for best dish images */
+       margin-bottom: 20px; /* Space between images */
+   }
+
+   .order {
+       flex-direction: column; /* Stack order section vertically */
+       align-items: center; /* Center align items */
+   }
+
+   .orderText {
+       margin-inline: 0; /* Remove horizontal margin */
+       text-align: center; /* Center align text */
+   }
+
+   .orderText i {
+       font-size: 120px; /* Decrease icon size */
+   }
+
+   .tracking {
+       flex-direction: column; /* Stack tracking section vertically */
+       align-items: center; /* Center align items */
+       margin-top: 20px; /* Adjust top margin */
+   }
+
+   .tracking img {
+       width: 100%; /* Full width for tracking image */
+   }
+
+   .footer {
+       flex-direction: column; /* Stack footer items vertically */
+       text-align: center; /* Center align text */
+       padding: 30px; /* Reduce padding */
+   }
+}
+
+/* Adjustments for smaller screens (e.g., phones) */
+@media (max-width: 480px) {
+   .logo h1 {
+       font-size: 12px; /* Decrease logo font size */
+   }
+
+   .nav ul {
+       margin-right: 8px; /* Reduce right margin */
+   }
+
+       nav ul a{
+
+text-decoration: none;
+color: white;
+margin-inline: 20px;
+}
+
+
+   .mainText h1 {
+       font-size: 20px; /* Decrease main heading font size */
+   }
+
+   .mainText h2 {
+       font-size: 20px; /* Decrease secondary heading font size */
+   }
+
+   .mainText p {
+       font-size: 12px; /* Decrease paragraph font size */
+   }
+
+   .mainText button {
+       width: 120px; /* Adjust button width */
+       height: 36px; /* Adjust button height */
+       font-size: 16px; /* Decrease button font size */
+   }
+
+   .crd {
+       width: 100%; /* Full width for cards */
+       margin-bottom: 10px; /* Reduce space between cards */
+   }
+
+   .bestText {
+       padding: 10px; /* Reduce padding */
+   }
+
+   .bestText a {
+       padding: 6px; /* Reduce padding for link */
+       font-size: 14px; /* Decrease link font size */
+   }
+
+   .orderText i {
+       font-size: 100px; /* Decrease icon size */
+   }
+
+   .orderText button {
+       width: 120px; /* Adjust button width */
+       height: 32px; /* Adjust button height */
+       font-size: 16px; /* Decrease button font size */
+   }
+
+   .tracking {
+       margin-top: 10px; /* Reduce top margin */
+   }
+
+   .footer {
+       padding: 20px; /* Reduce padding */
+   }
+}
